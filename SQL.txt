@@ -1,0 +1,19 @@
+show databases;  #데이터베이스 조회
+drop database sqlDB;  #데이터베이스 삭제
+create database sqlDB default character set utf8;  #데이터베이스 생성
+use sqlDB;  #데이터베이스 사용
+select * from sqlDB; #테이블 조회
+
+drop table user_Tbl;  #테이블 삭제
+create table user_Tbl(   #테이블 생성
+    userID char(100) PRIMARY KEY,
+    name char(100) not null,
+    birthYear char(100) not null,
+    addr char(100) not null,
+    mobile1 char(100) not null,
+    mobile2 char(100),
+    height char(100),
+    mDate char(100) not null
+);
+
+select * from user_Tbl;  #데이터 조회
